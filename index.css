@@ -1,7 +1,16 @@
+html {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+body {
+  margin: 0px;
+}
+
 .App {
-  display:flex;
+  display: flex;
   background-color: #494545;
-  color:white;
+  color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -9,41 +18,39 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  height:100vh;
+  height: 100vh;
 }
 
-.App-editor{
+.App-editor {
   border-right: 3px solid lightgrey;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
-textarea:focus{
-  outline: none; 
+
+textarea:focus {
+  outline: none;
 }
 
 .App-editor > h2, .App-previewer > h2 {
-  padding-left:10px;  
+  text-align: center;
 }
 
 #editor, #preview {
-  width:100%;
+  width: 100%;
   height: 100%;
-  border:none;
+  border: none;
   border-top: 3px solid lightgrey;
-  box-sizing: border-box;  
-  padding:10px;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow-y: scroll;
 }
 
 #preview a:link {
-    color: lightskyblue;
+  color: lightskyblue;
 }
 
 textarea {
-   font-family: inherit;
-   font-size: inherit;
-   color: inherit;
-   background-color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: inherit;
 }
-
-
-
-
