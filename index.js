@@ -10,10 +10,10 @@ $(document).ready(function () {
         $("#preview").html(marked($(this)[0].value));
     });
 
-    var editorScrollRomm = $('#editor')[0].scrollHeight - $('#editor').height() - 40;
-    var previewScrollRomm = $('#preview')[0].scrollHeight - $('#preview').height() - 40;
-    var ratioScroll = previewScrollRomm / editorScrollRomm;
-
+    var editorScrollRoom = $('#editor')[0].scrollHeight - $('#editor').height() - 40;
+    var previewScrollRoom = $('#preview')[0].scrollHeight - $('#preview').height() - 40;
+    var ratioScroll = previewScrollRoom / editorScrollRoom;
+    
     $('#editor').on('scroll', function () {
         $('#preview').scrollTop($('#editor').scrollTop() * ratioScroll);
     });
