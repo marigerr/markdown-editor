@@ -15,7 +15,7 @@ $(document).ready(function () {
     var ratioScroll = previewScrollRomm / editorScrollRomm;
 
     $('#editor').on('scroll', function () {
-        $('#preview').scrollTop($(this).scrollTop() * ratioScroll);
+        $('#preview').scrollTop($('#editor').scrollTop() * ratioScroll);
     });
 
 });
@@ -51,5 +51,5 @@ var seedText =
     "alert(s);" +
     "```\n\n" +
 
-    "![alt text](http://res.cloudinary.com/marigerr/image/upload/c_scale,w_302/v1499627530/tree-whiteBackgrnd-512height_t5lzgp.png)\n\n"
+    "![alt text](https://res.cloudinary.com/marigerr/image/upload/c_scale,w_302/v1499627530/tree-whiteBackgrnd-512height_t5lzgp.png)\n\n"
     ;
