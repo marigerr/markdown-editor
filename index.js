@@ -10,11 +10,14 @@ $(document).ready(function () {
         $("#preview").html(marked($(this)[0].value));
     });
 
-    var editorScrollRoom = $('#editor')[0].scrollHeight - $('#editor').height() - 40;
-    var previewScrollRoom = $('#preview')[0].scrollHeight - $('#preview').height() - 40;
-    var ratioScroll = previewScrollRoom / editorScrollRoom;
-    
+
+    // var ratioScroll = previewScrollRoom / editorScrollRoom;
+
     $('#editor').on('scroll', function () {
+        var editorScrollRoom = $('#editor')[0].scrollHeight - $('#editor').height() - 40;
+        var previewScrollRoom = $('#preview')[0].scrollHeight - $('#preview').height() - 40;
+        var ratioScroll = previewScrollRoom / editorScrollRoom;
+        console.log(ratioScroll);
         $('#preview').scrollTop($('#editor').scrollTop() * ratioScroll);
     });
 
