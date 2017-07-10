@@ -54,5 +54,5 @@ var seedText =
     "alert(s);" +
     "```\n\n" +
 
-    "![alt text](https://res.cloudinary.com/marigerr/image/upload/c_scale,w_302/v1499627530/tree-whiteBackgrnd-512height_t5lzgp.png)\n\n"
+    "![alt text](https://res.cloudinary.com/marigerr/image/upload/c_scale,r_14,w_137/v1499627530/tree-whiteBackgrnd-512height_t5lzgp.png)\n\n"
     ;
